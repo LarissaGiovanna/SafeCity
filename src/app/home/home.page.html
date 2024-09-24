@@ -1,20 +1,27 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="logo">
+    <h1>Segurança Pública</h1>
+    <img src="../../assets/logo.png" alt="">
+  </div>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-list>
+      <ion-item>
+        <ion-input class="custom" placeholder="E-mail" labelPlacement="stacked" type="email">
+          <ion-icon slot="start" name="mail-outline" color="light" size="large"></ion-icon>
+          <ion-button slot="end" fill="clear">
+            <ion-icon name="chevron-down-outline" color="light" size="large"></ion-icon>
+          </ion-button>
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="Senha" labelPlacement="stacked" type="password">
+          <ion-icon size="large" slot="start" name="lock-closed-outline" color="light"></ion-icon>
+          <ion-button fill="clear" slot="end">
+            <ion-icon name="eye-outline" color="light" size="large"></ion-icon>
+          </ion-button>
+        </ion-input>
+      </ion-item>
+    </ion-list>
   </div>
 </ion-content>
