@@ -37,14 +37,14 @@ ion-item {
   --background: rgba(0, 0, 0, 0)
 }
 
-.senha {
+.termo {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 3%;
 }
 
-.senha a {
+.termo a {
   color: white;
   font-family: "League Spartan";
   font-weight: 600;
@@ -58,7 +58,11 @@ ion-col ion-button{
 .inputs{
   border: solid 2px white;
   border-radius: 30px;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
+}
+
+#concordo{
+    margin-right: 3%;
 }
 
 #city{

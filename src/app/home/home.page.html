@@ -5,16 +5,16 @@
   </div>
 
   <div id="container">
-    <ion-list>
-      <ion-item>
-        <ion-input class="custom" placeholder="E-mail" labelPlacement="stacked" type="email">
+      <ion-item class="inputs">
+        <ion-input placeholder="E-mail" labelPlacement="stacked" type="email">
           <ion-icon slot="start" name="mail-outline" color="light" size="large"></ion-icon>
           <ion-button slot="end" fill="clear">
             <ion-icon name="chevron-down-outline" color="light" size="large"></ion-icon>
           </ion-button>
         </ion-input>
+
       </ion-item>
-      <ion-item>
+      <ion-item class="inputs">
         <ion-input placeholder="Senha" labelPlacement="stacked" type="password">
           <ion-icon size="large" slot="start" name="lock-closed-outline" color="light"></ion-icon>
           <ion-button fill="clear" slot="end">
@@ -22,6 +22,20 @@
           </ion-button>
         </ion-input>
       </ion-item>
-    </ion-list>
+      <div class="senha">
+        <a href="#">Esqueci minha senha</a>
+      </div>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button shape="round">Entrar</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button shape="round" routerLink="/criar-conta">Criar Conta</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
+  <img id="city" src="../../assets/city.png" alt="">
 </ion-content>

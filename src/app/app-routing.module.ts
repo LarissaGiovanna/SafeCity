@@ -10,7 +10,15 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },  {
+    path: 'criar-conta',
+    loadChildren: () => import('./criar-conta/criar-conta.module').then( m => m.CriarContaPageModule)
   },
+  {
+    path: 'criar-senha',
+    loadChildren: () => import('./criar-senha/criar-senha.module').then( m => m.CriarSenhaPageModule)
+  },
+
 ];
 
 @NgModule({

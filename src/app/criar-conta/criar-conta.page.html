@@ -1,0 +1,42 @@
+<ion-content [fullscreen]="true">
+  <div class="logo">
+    <h1>Crie sua conta</h1>
+    <img src="../../assets/logo.png" alt="">
+  </div>
+
+  <div id="container">
+    <ion-item class="inputs">
+      <ion-input placeholder="Número de telefone" labelPlacement="stacked" type="tel">
+      </ion-input>
+    </ion-item>
+
+    <ion-item class="inputs">
+      <ion-input placeholder="CPF" labelPlacement="stacked" type="number">
+      </ion-input>
+    </ion-item>
+
+    <ion-item class="inputs">
+      <ion-input placeholder="E-mail" labelPlacement="stacked" type="email">
+      </ion-input>
+    </ion-item>
+
+    <div class="termo">
+      <input type="checkbox" name="" id="concordo">
+      <a href="#">Li e concordo com os Termos e Condições</a>
+    </div>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button shape="round" routerLink="/home">
+            Voltar</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button shape="round" routerLink="/criar-senha">Criar Conta</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
+  <img id="city" src="../../assets/city.png" alt="">
+</ion-content>
