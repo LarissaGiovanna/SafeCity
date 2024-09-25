@@ -18,6 +18,10 @@ const routes: Routes = [
     path: 'criar-senha',
     loadChildren: () => import('./criar-senha/criar-senha.module').then( m => m.CriarSenhaPageModule)
   },
+  {
+    path: 'bem-vindo',
+    loadChildren: () => import('./bem-vindo/bem-vindo.module').then( m => m.BemVindoPageModule)
+  },
 
 ];
 

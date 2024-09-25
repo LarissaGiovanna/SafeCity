@@ -1,0 +1,16 @@
+.blur{
+    height: 25vh;
+    background: linear-gradient(#598eaa, #89a7b8);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.blur img{
+    width: 60%;
+    position: relative;
+    bottom: -40%;
+}
+#pencil{
+    position: relative;
+    right: 50%;
+}
