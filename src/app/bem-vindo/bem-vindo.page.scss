@@ -1,16 +1,39 @@
-.blur{
+.blur {
     height: 25vh;
     background: linear-gradient(#598eaa, #89a7b8);
     display: flex;
     align-items: flex-end;
     justify-content: center;
 }
-.blur img{
+
+.blur img {
     width: 60%;
     position: relative;
     bottom: -40%;
 }
-#pencil{
-    position: relative;
-    right: 50%;
+
+#pencil {
+    position: absolute;
+    right: 25%;
+    top: 25%
+}
+
+.text{
+    margin-top: 20%;
+}
+
+.grupos img {
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+}
+
+ion-card-header {
+    --display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+ion-card-title {
+    margin-left: 2%;
 }

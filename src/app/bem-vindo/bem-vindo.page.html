@@ -1,8 +1,56 @@
 <ion-content [fullscreen]="true" color="tertiary">
   <div class="blur">
     <img src="../../assets/user.png" alt="">
-    <ion-button id="pencil" shape="round">
+    <ion-button id="pencil" shape="round" size="large">
       <ion-icon name="pencil-outline" slot="icon-only"></ion-icon>
     </ion-button>
   </div>
+
+  <div class="text">
+    <ion-title>Bem vindo(a)</ion-title>
+    <p>Escolha o grupo de moradores próximos de você para saber das últimas novidades.</p>
+  </div>
+
+  <div class="grupos">
+    <ion-card>
+      <ion-card-header>
+        <img src="../../assets/rua2.jpg" alt="">
+        <ion-card-title>Rua 20, Alto Dois Carneiros</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>577 pessoas</p> 
+        <ion-button shape="round">Entrar no grupo</ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <img src="../../assets/rua1.jpg" alt="">
+        <ion-card-title>Alto do Cristo, Cavaleiro</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <p>848 pessoas</p>
+        <ion-button shape="round">Entrar no grupo</ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <img src="../../assets/rua3.jpg" alt="">
+        <ion-card-title>Rua das Ararinhas, Vila Rica</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <p>3.733 pessoas</p>
+        <ion-button shape="round">Entrar no grupo</ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-infinite-scroll>
+      <ion-infinite-scroll-content loadingText="Carregando mais grupos..." loadingSpinner="bubbles"></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+
+  </div>
+
 </ion-content>
