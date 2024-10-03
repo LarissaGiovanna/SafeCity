@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 .blur {
     height: 25vh;
     background: linear-gradient(#598eaa, #89a7b8);
@@ -20,6 +21,22 @@
 
 .text{
     margin-top: 20%;
+    padding: 0 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: monserrat;
+}
+
+hr{
+    background-color: white;
+    height: 2px;
+    width: 80%;
+}
+
+.grupos{
+    padding: 0 5% 0 5%;
 }
 
 .grupos img {
@@ -36,4 +53,13 @@ ion-card-header {
 
 ion-card-title {
     margin-left: 2%;
+}
+
+ion-card{
+    border-radius: 10%;
+    border: 2px white solid;
+}
+
+ion-card, ion-card-header, ion-card-content{
+    --background: rgba(0,0,0,0);
 }
