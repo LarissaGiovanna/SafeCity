@@ -1,8 +1,68 @@
 <ion-content [fullscreen]="true" color="tertiary">
   <div class="blur">
     <img src="../../assets/user.png" alt="">
-    <ion-button id="pencil" shape="round">
+    <ion-button id="pencil" shape="round" size="large">
       <ion-icon name="pencil-outline" slot="icon-only"></ion-icon>
     </ion-button>
   </div>
+
+  <div class="text">
+    <ion-title>Bem vindo(a) </ion-title>
+    <hr>
+    <p>Escolha o grupo de moradores próximos de você para saber das últimas novidades.</p>
+  </div>
+
+  <div class="grupos">
+    <ion-card >
+      <ion-card-header>
+        <img src="../../assets/rua2.jpg" alt="">
+        <ion-card-title>Rua 20, Alto Dois Carneiros<br>433 pessoas</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <img src="../../assets/rua1.jpg" alt="">
+        <ion-card-title>Alto do Cristo, Cavaleiro<br>933 pessoas</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <img src="../../assets/rua3.jpg" alt="">
+        <ion-card-title>Rua das Ararinhas, Vila Rica<br>7.382 pessoas</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <img src="../../assets/rua4.jpg" alt="">
+        <ion-card-title>Rua Dois, Dois Carneiros<br>749 pessoas</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <img src="../../assets/rua5.jpg" alt="">
+        <ion-card-title>Rua da Amizade, Dois Carneiros<br>156 pessoas</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+
+    <ion-infinite-scroll>
+      <ion-infinite-scroll-content loadingText="Carregando mais grupos..." loadingSpinner="bubbles"></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+
+  </div>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button shape="round">Talvez</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button shape="round" routerLink="/criar-conta">Próximo</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
 </ion-content>
